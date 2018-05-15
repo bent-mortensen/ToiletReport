@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AppRoutingModule } from '../app-routing.module';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-confirmation',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfirmationComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private DataService: DataService
+  ) { }
 
   ngOnInit() {
+    console.log(this.DataService.GetType());
   }
 
 }

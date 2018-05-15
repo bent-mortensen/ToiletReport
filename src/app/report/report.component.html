@@ -1,3 +1,31 @@
-<p>
-  report works!
-</p>
+<div class="wrap">
+
+    <div class="headline">
+      <p class="headlinetext">Toilet Report</p>
+    </div>
+    <div class="picture"> <!-- picture claas, bliver kun brugt til at finde positionen for teksten-->
+      <p class="breadtext">Appen skal bruge din GPS for at kunne finde
+          din position.<br>
+          <br>
+          Tryk på Report for at indrapportere toilettet.</p>
+    </div>
+
+    <div class="radiobutton" >
+      <p class="breadtext">Vælg hvilken type toilet</p>
+        <br>
+        <form>
+            <input type="radio" name="type" [(ngModel)]="value" value="offentlig" checked="checked"> <span class="nobreak">Offentlig</span><br><br>
+            <input type="radio" name="type" [(ngModel)]="value" value="butik"> <span class="nobreak">Butik</span><br><br>
+            <input type="radio" name="type" [(ngModel)]="value" value="kirke"> <span class="nobreak">Kirke</span>
+          </form>
+    </div>
+  
+    <div class="button1">
+      <button (click)="GoToConfirmation()">Report</button>
+    </div>
+    <div class="button2">
+      <button (click)="GoToHome()">Back</button>
+    </div>
+  
+  </div>
+<p>Report Toilet</p>

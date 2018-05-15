@@ -17,6 +17,6 @@ export class AppComponent {
     this.router.navigate(["/splashscreen"]);
     setTimeout(() => {
       this.router.navigate(["/home"]);
-    }, 30);
+    }, 300);
   }
 }
