@@ -6,6 +6,19 @@ p.headlinetext {
     font-family: Roboto-Light;
     font-size: 29px;
     text-align: center;
+    display: block;
+    margin: 0 auto;
+    color:      #808080;
+}
+
+p.headlinetextconfirmation {
+    width: 281px;
+    height: 48px;
+    font-family: Roboto-Light;
+    font-size: 48px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
     color:      #808080;
 }
 
@@ -23,12 +36,17 @@ p.breadtext {
     font-size: 15px;
     color: #808080;
 }
+p.breadtextcenter {
+    text-align: center;
+    font-family: Roboto-Light;
+    font-size: 15px;
+    color: #808080;
+}
 
 h2.breadtext {
     text-align: left;
     font-family: Roboto-Light;
     font-size: 15px;
-    
     color: #808080;
 }
 
@@ -53,6 +71,8 @@ div.headline {
     top: 5%;
     left: 20px;
     right: 20px;
+    display: block;
+    margin: 0 auto;
     border: 0px solid blue;
 } 
 
@@ -63,6 +83,13 @@ div.picture {
     right: 20px;
     border: 0px solid green;
 } 
+div.washyourhands {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    right: 20px;
+    border: 0px solid green;
+}
 
 div.radiobutton {
     position: absolute;

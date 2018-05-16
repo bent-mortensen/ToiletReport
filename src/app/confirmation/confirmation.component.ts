@@ -10,13 +10,23 @@ import { DataService } from '../data.service';
 })
 export class ConfirmationComponent implements OnInit {
 
+  private type: String;
+  private latitude: number;
+  private longitude: number;
+
   constructor(
     private router: Router,
     private DataService: DataService
   ) { }
 
   ngOnInit() {
-    console.log(this.DataService.GetType());
+    this.type = this.DataService.GetType();
+    this.latitude = this.DataService.GetLatitude();
+    this.longitude = this.DataService.GetLongitude();
+    //console.log(this.DataService.GetType());
   }
 
+  GoToHome(){
+    this.router.navigate(["/home"]);
+  }
 }

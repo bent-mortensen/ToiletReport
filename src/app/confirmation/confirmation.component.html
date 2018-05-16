@@ -1,3 +1,23 @@
-<p>
-  confirmation works!
-</p>
+
+<div class="wrap">
+
+  <div class="headline">
+    <p class="headlinetextconfirmation">Success</p>
+  </div>
+  <div class="picture"> <!-- picture claas, bliver kun brugt til at finde positionen for teksten-->
+    <p class="breadtextcenter">Toilettet er blevet gemt.<br><br>
+
+    Type: {{ type }}<br>
+    Latitude: {{ latitude }}<br>
+    Longitude: {{ longitude }}</p>
+  </div>
+  <div class="washyourhands">
+      <p class="headlinetextconfirmation">Now go<br> wash<br> your hands</p>
+  </div>
+
+
+  <div class="button2">
+    <button (click)="GoToHome()">Home</button>
+  </div>
+
+</div>
